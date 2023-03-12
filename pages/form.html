@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Input Form</title>
+</head>
+<body>
+    <form>
+    <header class="headerContainer"><h1>Input Form</h1></header>
+    <div>
+        <label for="text">Candidate Name: </label>
+        <input type="text" id="text" name="text" required>
+        <error-output class="text-error" for="text"></error-output>
+    </div>
+    <div>
+        <label for="text">Password: </label>
+        <input type="password" id="pwd" name="pwd" required>
+    </div>
+    <div>
+        <label for="text">Email: </label>
+        <input type="email" id="eml" name="eml" required>
+    </div>
+    <div>
+        <label for="text">Phone No.: </label>
+        <input type="number" id="num" name="num">
+    </div>
+    <div class="nativeDateTimePicker">
+        <label for="startDate">Date And Time: </label>
+        <input type="date" id="date" name="date" required>
+        <span class="validity"></span>
+    </div>
+    <div>
+        <label for="salary">salary: </label>
+        <input type="range" id="salary" name="salary" min="100000" max="500000" step="100" value="200000" required>
+        <output class="salary-output" for="salary">200000</output>   
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+    </form>
+    <script src="../js/salary.js"></script>
+</body>
+</html>
